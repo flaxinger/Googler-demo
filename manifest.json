@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Googler",
+    "short_name": "GG",
+    "description": "Google Search Helper",
+    "version": "1.0.0",
+    "icons": {"128": "images/icon_128.png"},
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_popup": "index.html",
+        "default_title": "Googler"
+    },
+    "background":{
+        "scripts":["background.js"],
+        "persistent": false
+    },
+    "content_scripts":[
+    {
+        "matches": ["*://www.google.com/", "*://www.google.com/search?*"],
+        "js": ["popup.js"]
+     }  
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
