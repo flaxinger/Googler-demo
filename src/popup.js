@@ -29,6 +29,6 @@ document.getElementById('proceedSearch').onclick = () => {
         //code: 'var userQuery = '+ JSON.stringify(rawQuery.result)
         code: 'var userQuery = '+ JSON.stringify(rawQuery.refine())
     }, function () {
-        chrome.tabs.executeScript({file: 'content.js'});
+        chrome.tabs.executeScript({file: 'src/content.js'});
     });
 };
