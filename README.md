@@ -1,7 +1,7 @@
 # Googler [Chrome Extension for Advanced Google Search Queries]
 
 <h1>Why use Googler</h1>
-<p>Googling is now part of our everyday lives, aiding us in research, jobs, hobbies etc. However, not everyone actively searches for better ways to form queries although google provides may powerful tools such as flags and regex. Although fully aware that there are advanced search tools provided by Google, not everyone makes use of them. Therefore this project aims to help more people easily use the powerful search tools provided by google; the final goal is to have as many people search better without the help of Googler.
+<p>Googling is now part of our everyday lives, aiding us with our research, jobs, hobbies etc. However, although Google provides may powerful tools such as flags and regex not everyone actively searches for better ways to form better queries. Therefore this project aims to help more people use the powerful search tools proveded by Google.
 </p>
 
 <h2>What can I do with Googler</h2>
