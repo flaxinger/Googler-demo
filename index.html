@@ -3,13 +3,66 @@
 <head>  
     <title>Test Send Message</title>
     <!--<script src='content.js'></script> -->
+    <link rel="stylesheet" type="text/css" href="src/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
-    Search <input id='searchString' type = 'text'>
-    Remove Sites <input id='removeSites' type='text'>
-    Search Sites <input id='searchSites' type='text'>
-    Filetype <input id='fileType' type='text'>
-    <input id='proceedSearch' type='button' value='Search'>
-    <script src='src/popup.js'></script>
+
+    <div class="googler-header">
+        <div class="googler-icon-holder">
+            <img class="googler-icon" src="images/icon_128.png" alt="Googler image"/>
+        </div>
+        <div class="header-title">
+            <strong>
+                Googler
+            </strong>
+        </div>
+        <div class="header-subtitle">
+            The world is yours
+        </div>
+    </div>
+    <div class="blank"></div>
+    <div class = "googler-body">
+        <div class="search-input">
+            <div class="input-header">
+                Search
+            </div>
+            <div class="input-body">
+                <input class="query" id='searchString' type = 'text'>
+            </div>
+        </div>
+        
+        <div class="search-input">
+            <div class="input-header">
+                Remove Sites
+            </div>
+            <div class="input-body">
+                <input class="query" id='removeSites' type = 'text'>
+            </div>
+        </div>
+
+        <div class="search-input">
+            <div class="input-header">
+                Search Sites
+            </div>
+            <div class="input-body">
+                <input class="query" id='searchSites' type = 'text'>
+            </div>
+        </div>
+
+        <div class="search-input">
+            <div class="input-header">
+                File Type
+            </div>
+            <div class="input-body">
+                <input class="query" id='fileType' type = 'text'>
+            </div>
+        </div>
+
+        <input class="search-button" id='proceedSearch' type='button' value='Search'>
+        <script src='src/popup.js'></script>
+    </div>
 </body>
 </html>

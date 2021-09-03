@@ -11,13 +11,13 @@
         "default_title": "Googler"
     },
     "background":{
-        "scripts":["background.js"],
+        "scripts":["src/background.js"],
         "persistent": false
     },
     "content_scripts":[
     {
         "matches": ["*://www.google.com/", "*://www.google.com/search?*"],
-        "js": ["popup.js"]
+        "js": ["src/popup.js"]
      }  
     ],
     "permissions": [
