@@ -42,7 +42,7 @@ document.getElementById('proceedSearch').onclick = () => {
 
     // chrome.tabs.create(url=rawQuery.refine());
     window.open(url=rawQuery.refine());
-    window.location.replace(url=rawQuery.refine());
+    // window.location.replace(url=rawQuery.refine());
     // chrome.tabs.executeScript({
     //     //code: 'var userQuery = '+ JSON.stringify(rawQuery.result)
     //     code: 'var userQuery = '+ JSON.stringify(rawQuery.refine())
