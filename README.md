@@ -25,7 +25,7 @@
 </li>
 <li>
   <h3>Avoid certain pages in search results</h3>
-    <p>In certain fields of study, there are certain sites that pop up frequently due to the search algorithm. However, removing these from your search results with search settings everytime may be tiresome. Googler provides a feature that allows you to avoid these sites on every search.</p>
+    <p>In certain fields of study, there are certain irrelevant or illegitimate sites that pop up frequently due to the search algorithm. However, removing these from your search results with search settings everytime may be tiresome. Googler provides a feature that allows you to avoid these sites on every search.</p>
 </li>
 <li>
   <h3>Learn to google better with advices</h3>
