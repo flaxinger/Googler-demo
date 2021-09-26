@@ -29,7 +29,7 @@
 </li>
 <li>
   <h3>Learn to google better with advices</h3>
-  <p>Starting to learn all the features at once may be tiresome. This is why we provide a simple tutorial and a recommendation setting time to time</p>
+  <p>Starting to learn all googling features at once may be tiresome. This is why we provide a simple tutorial and a recommendation setting time to time</p>
   </li>
 
 </ol>
