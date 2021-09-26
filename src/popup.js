@@ -1,34 +1,23 @@
-function queryRefine(mainQuery="", searchSite="", removeSites="", fileType="", result=""){
-    this.mainQuery = mainQuery;
-    this.searchSite = searchSite;
-    this.removeSites = removeSites;
-    this.fileType = fileType;
-    this.result = result;
-}
 
-queryRefine.prototype.refine = function (){
-    this.result = this.mainQuery;
-    if(this.removeSites.length > 0){
-        this.result += " -site:" + this.removeSites; 
-    }
-    if(this.fileType.length > 0){
-        this.result += " filetype:" + this.fileType;
-    }
-    return this.result;
-}
+var tag = document.createElement("input");
+// var text = document.createTextNode("AAA");
+// tag.appendChild(text);
+tag.setAttribute("type", "image");
+tag.setAttribute("id", "googler-image");
+tag.setAttribute("src", "https://raw.githubusercontent.com/flaxinger/Googler-demo/master/images/icon_128.svg");
+// tag.style.cssText += "padding-right: 13px";
+// var element_padding = document.getElementsByClassName("Tg7LZd")[0];
+// element_padding.
+// setAttribute("padding-right", "0px");
+const element_padding = document.querySelector('.Tg7LZd');
+if(element_padding != null) element_padding.style.cssText += "padding-right:0px";
+var element = document.getElementsByClassName("RNNXgb")[0];
 
-//let rawQuery = queryRefine;
+if(element!=null) element.appendChild(tag);
 
-document.getElementById('proceedSearch').onclick = () => {
-    let rawQuery = new queryRefine(document.getElementById("searchString").value, 
-                            document.getElementById("searchSites").value,
-                            document.getElementById("removeSites").value, 
-                            document.getElementById("fileType").value);
-    //console.log(rawQuery.refine());
-    chrome.tabs.executeScript({
-        //code: 'var userQuery = '+ JSON.stringify(rawQuery.result)
-        code: 'var userQuery = '+ JSON.stringify(rawQuery.refine())
-    }, function () {
-        chrome.tabs.executeScript({file: 'src/content.js'});
-    });
-};
+{/* <button class="Tg7LZd" jsname="Tg7LZd" aria-label="Google Search" type="submit" data-ved="0ahUKEwi5-Y_wpZrzAhU5yYsBHX50CIUQ4dUDCA4"> 
+    <div class="zgAlFc"> 
+        <span class="z1asCe MZy1Rb">
+        </span>
+    </div>
+</button> */}
