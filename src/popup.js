@@ -1,52 +1,23 @@
 
-// Query Object
-// mainQuery = Query end users want to search
-// searchSite = Sites end users want to see
-// removeSites = Sites end users don't want to see
-// fileType = Filetype end users want to find
-// result = concatnated query result
-function queryRefine(mainQuery="", searchSite="", removeSites="", fileType="", result=""){
-    this.mainQuery = mainQuery;
-    this.searchSite = searchSite;
-    this.removeSites = removeSites;
-    this.fileType = fileType;
-    this.result = result;
-}
+var tag = document.createElement("input");
+// var text = document.createTextNode("AAA");
+// tag.appendChild(text);
+tag.setAttribute("type", "image");
+tag.setAttribute("id", "googler-image");
+tag.setAttribute("src", "https://raw.githubusercontent.com/flaxinger/Googler-demo/master/images/icon_128.svg");
+// tag.style.cssText += "padding-right: 13px";
+// var element_padding = document.getElementsByClassName("Tg7LZd")[0];
+// element_padding.
+// setAttribute("padding-right", "0px");
+const element_padding = document.querySelector('.Tg7LZd');
+if(element_padding != null) element_padding.style.cssText += "padding-right:0px";
+var element = document.getElementsByClassName("RNNXgb")[0];
 
-queryRefine.prototype.refine = function (){
-    this.result = "https://google.com/search?q=";
-    if(this.mainQuery.length > 0) 
-        this.result += this.mainQuery.trim().replaceAll(/\s+/ig, "+");
-    if(this.removeSites.length > 0){
-        this.result += "+"
-        this.result += this.removeSites.trim().replaceAll(/\s+/ig, "-site:");
-    }
-    if(this.fileType.length > 0){
-        this.result+="+filetype:";
-        this.result += this.fileType.trim().replaceAll(/\s+/ig, "+OR+filetype:");
-    }
-    if(this.searchSite.length > 0){
-        this.result+="&as_sitesearch=";
-        this.result += this.searchSite.trim().replaceAll(/\s+/ig, "+");
-    }
+if(element!=null) element.appendChild(tag);
 
-    return this.result;
-}
-
-document.getElementById('proceedSearch').onclick = () => {
-    let rawQuery = new queryRefine(document.getElementById("searchString").value, 
-                            document.getElementById("searchSites").value,
-                            document.getElementById("removeSites").value, 
-                            document.getElementById("fileType").value);
-
-
-    // chrome.tabs.create(url=rawQuery.refine());
-    window.open(url=rawQuery.refine());
-    // window.location.replace(url=rawQuery.refine());
-    // chrome.tabs.executeScript({
-    //     //code: 'var userQuery = '+ JSON.stringify(rawQuery.result)
-    //     code: 'var userQuery = '+ JSON.stringify(rawQuery.refine())
-    // }, function () {
-    //     chrome.tabs.executeScript({file: 'src/content.js'});
-    // });
-};
+{/* <button class="Tg7LZd" jsname="Tg7LZd" aria-label="Google Search" type="submit" data-ved="0ahUKEwi5-Y_wpZrzAhU5yYsBHX50CIUQ4dUDCA4"> 
+    <div class="zgAlFc"> 
+        <span class="z1asCe MZy1Rb">
+        </span>
+    </div>
+</button> */}
